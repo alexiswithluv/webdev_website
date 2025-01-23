@@ -6,11 +6,10 @@
   }
 
   body {
-    background-color: #f9f9f9;
     color: #333;
     text-align: center;
-    background-image: url("herobg2.jpg");
-    padding-top: 70px; 
+    background-image: url("img-process.jpg");
+    padding-top: 60px;
   }
 
   header {
@@ -55,10 +54,10 @@
     color: #ff8800;
   }
 
-  /* Hero Page Section */
-  .hero {
+/* Hero Page Section */
+.hero {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: white;
   }
 
   .hero h1 {
@@ -105,10 +104,20 @@
     background-color: #ffaa33;
   }
 
+  /* Gallery */ 
+
   .gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gallery2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     padding: 20px;
     flex-wrap: wrap;
   }
@@ -116,17 +125,22 @@
   .pets {
     width: 300px;
     perspective: 1000px;
-    background-image: url("herobg2.jpg");
+    background-image: url("img-process.jpg");
+    margin: 20px;
   }
 
   /* Cards section */
   .card1,
   .card2,
-  .card3 {
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
     width: 300px;
     perspective: 1000px;
-    background-image: url("herobg2.jpg");
+    background-image: url("img-process.jpg");
   }
+
   .card-inner1 > .front {
     background: linear-gradient(
         to top,
@@ -174,19 +188,74 @@
     color: white;
   }
 
+  .card-inner4 > .front {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      ),
+      url("queenie.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  .card-inner5 > .front {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      ),
+      url("yohan.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  .card-inner6 > .front {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      ),
+      url("primo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+
   .card-inner1,
   .card-inner2,
-  .card-inner3 {
+  .card-inner3, 
+  .card-inner4,
+  .card-inner5,
+  .card-inner6 {
     position: relative;
     width: 100%;
     height: 400px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    flex-basis: 300px;
   }
 
   .card1:hover .card-inner1,
   .card2:hover .card-inner2,
-  .card3:hover .card-inner3 {
+  .card3:hover .card-inner3,
+  .card4:hover .card-inner4,
+  .card5:hover .card-inner5,
+  .card6:hover .card-inner6 {
     transform: rotateY(180deg);
   }
 
