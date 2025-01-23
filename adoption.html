@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Adoption Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Purrfect Match</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pets</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="adoption-form">
+    <h1>Pet Adoption Application</h1>
+    <form action="submit_adoption.php" method="POST">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full_name" required />
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="preferred-pet">Preferred Pet:</label>
+      <select id="preferred-pet" name="preferred_pet" required>
+        <option value="cat">Bini Maloi</option>
+        <option value="dog">Cardo Dalisay</option>
+        <option value="dog">Chai Chai</option>
+      </select>
+
+      <label for="reason">Why do you want to adopt?</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Purrfect. All rights reserved.</p>
+  </footer>
+</body>
+</html>
