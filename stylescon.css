@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg, #ecf7f0, #6f9235);
+    padding: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3{
+    width: 350px;
+    height: 515px;
+    margin: 50px ;
+    border-radius: 15px;
+}
+
+.card-inner1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+.card-inner1 > .front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-inner1 > .front {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.front h2{
+    font-weight:500;
+}
+
+.front p{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+}
+
+.card-inner1 > .back {
+    background: white;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+
+}
+.back h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.back h1 span{
+    font-weight: 400;
+}
+
+.back p {
+    font-size: 14px;
+
+}
+
+.row-socials {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: relative;
+}
+
+.col::after{
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #03471d;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.col:last-child::after{
+    display:none;
+}
+
+.back button{
+    background: #6f9235;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+
+.back a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.back a img {
+    width: 50%
+}
+
+.back > .profile-pic img {
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid #03471d;;
+  }
+
+  .card1:hover .card-inner1{
+    transform: rotateY(180deg);
+  }
+
+/* second profile card */
+
+  .card-inner2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+  .card-inner2 > .front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-inner2 > .front {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('./image2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.card-inner2 > .back {
+    background: white;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+
+}
+.back h1 {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.back h1 span{
+    font-weight: 400;
+}
+
+.back p {
+    font-size: 14px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: relative;
+}
+
+.col::after{
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #03471d;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.col:last-child::after{
+    display:none;
+}
+
+.back > .profile-pic img {
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid #03471d;;
+  }
+
+  .card2:hover .card-inner2{
+    transform: rotateY(180deg);
+  }
+
+  .card-inner3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-inner3 > .front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-inner3 > .front {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('./image3.jpg'); /* Use a unique image for card3 */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.card-inner3 > .back {
+    background: white;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+
+.card3:hover .card-inner3 {
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.back h1 span {
+    font-weight: 400;
+}
+
+.back p {
+    font-size: 14px;
+}
+
+.back > .profile-pic img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    border: 2px solid #03471d;
+}
