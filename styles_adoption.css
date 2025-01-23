@@ -427,8 +427,8 @@ nav ul li a:hover {
 .adoption-form input[type="submit"] {
   background-color: #ff8800;
   color: #fff;
-  border: none;
-  padding: 14px 38px;
+  border-color: #ff8800;
+  padding: 20px 35px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
