@@ -6,21 +6,20 @@
     <title>Purrfect Match</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+<!-- navigation -->
   <nav>
-      <header>
-      
-        <div class="logo">Purrfect Match</div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#process">Adoption Process</a></li>
-          <li><a href="pets.html">Pets</a></li>
-          <li><a href="indexcon.html">About</a></li>
-        </ul>
-      </header>
-    </nav>
-      
-    
-<body>
+    <header>
+      <div class="logo">Purrfect Match</div>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="#process">Adoption Process</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="indexcon.html">About</a></li>
+      </ul>
+    </header>
+  </nav>
+<!-- main body -->
+  <body>
     <div class="hero">
       <h1>Find Your Purrfect Match Today!</h1>
       <p>
@@ -33,6 +32,7 @@
       </div>
     </div>
 
+<!-- gallery profile cards -->
     <div class="gallery">
       <div class="card1">
         <div class="card-inner1">
@@ -145,6 +145,7 @@
         </div>
       </div>
     </div>
+<!-- adoption process -->
     <section class="adoption-process" id="process">
       <h1>
         Our Process <br />
@@ -154,36 +155,48 @@
       <div class="process-container">
         <div class="process-steps">
           <div class="adoption-images">
-          <div class="paw-container">
-            <img src="paw_png-removebg-preview.png" class="right-align-img"  alt="Pets"/>
+            <div class="paw-container">
+              <img
+                src="paw_png-removebg-preview.png"
+                class="right-align-img"
+                alt="Pets"
+              />
+            </div>
+            <ul>
+              <li>
+                <span class="icon">📄</span>
+                Submit an application
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                Attend an online interview
+              </li>
+              <li>
+                <span class="icon">🐾</span>
+                Meet the pet in person
+              </li>
+              <li>
+                <span class="icon">📝</span>
+                Sign an adoption agreement
+              </li>
+              <li>
+                <span class="icon">🎉</span>
+                Congratulations on finding a match!
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <span class="icon">📄</span>
-              Submit an application
-            </li>
-            <li>
-              <span class="icon">📞</span>
-              Attend an online interview
-            </li>
-            <li>
-              <span class="icon">🐾</span>
-              Meet the pet in person
-            </li>
-            <li>
-              <span class="icon">📝</span>
-              Sign an adoption agreement
-            </li>
-            <li>
-              <span class="icon">🎉</span>
-              Congratulations on finding a match!
-            </li>
-          </ul>
-        </div>
+          <div></div>
+          <form action="adoption.php" >
+          <a href="adoption.php" class="btn-form">
+              Submit an application!
+            </a>
+          </form>
+          
         </div>
       </div>
     </section>
 
+<!-- footer -->
     <footer>
       <p>&copy; 2025 Purrfect Match. All rights reserved.</p>
     </footer>
